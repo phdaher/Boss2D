@@ -6,7 +6,7 @@ Save the Bomb!
 O jogo *Save the Bomb!* tem como objetivo cuidar de um bomba, que é controlada pelo jogador. Ela começa em queda livre, e precisa sempre se apoiar em objetos seguros, não podendo cair nem chegar nas chamas do topo. Preste atenção nas plataformas em que irá se apoiar.
 
 Autor Descrição da alteração Data da alteração
-Pedro Daher Jogo Beta (v0.1) 08/04/2020
+Pedro Daher Jogo Final (v1.0) 26/04/2020
 
 
 **Identidade do jogo (Conceito)**
