@@ -15,7 +15,7 @@ Você possui uma bomba em mãos, e tem o controle dela. Coloque ela sempre em lo
 
 **Descrição da mecânica (Core Mechanics / System design)**
 
-A mecânica do jogo consiste em usar as setinhas do teclado para locomover a bomba de um lado para o outro rapidamente e com segurança. Os obstáculos e apoios mudam sua dinâmica de acordo com o nível. (Ainda não disponível na versão Beta)
+A mecânica do jogo consiste em usar as setinhas do teclado para locomover a bomba de um lado para o outro rapidamente e com segurança. Os obstáculos e apoios mudam sua dinâmica de acordo com o nível.
 
 **Características (Mundo do jogo)**
 
@@ -26,8 +26,7 @@ Ambiente vulcânico, com chamas, spikes e objetos frágeis.
 2D Pixel Art. (será melhorado nas próximas versões)
 
 **Música/Trilha Sonora**
-
-Ainda não implementado na versão Beta.
+Som de fundo com animações que dependem do toque do objeto
 
 **Controles**
 
@@ -39,7 +38,7 @@ O jogo será dividido em fases, assim que uma fase é concluída, a dificuldade 
 
 **Fluxo do jogo**
 
-O fluxo do jogo é continuo, assim que você conclui uma fase ele passa para a próxima automaticamente. As telas são o Gameplay, Start, Resume e GameOver. (Ainda não disponível na versão Bets)
+O fluxo do jogo é continuo, assim que você conclui uma fase ele passa para a próxima automaticamente, aumentando a dificuldade e salvando seu melhor resultado. 
 
 **Personagens**
 
