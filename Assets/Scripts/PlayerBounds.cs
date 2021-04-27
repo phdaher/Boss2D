@@ -29,7 +29,9 @@ public class PlayerBounds : MonoBehaviour {
             if(!out_Of_Bounds) {
 
                 out_Of_Bounds = true;
+                SoundManager.instance.DeathSound();
                 GameManager.instance.RestartGame();
+                
             }
 
         }
@@ -42,6 +44,7 @@ public class PlayerBounds : MonoBehaviour {
         if(target.tag == "TopFire") {
 
             transform.position = new Vector2(1000f, 1000f);
+            SoundManager.instance.DeathSound();
             GameManager.instance.RestartGame();
 
         }

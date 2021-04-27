@@ -27,6 +27,10 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetAxisRaw("Horizontal") < 0f) {
             myBody.velocity = new Vector2(-moveSpeed, myBody.velocity.y);
         }
+    }
+
+    public void PlatformMove(float x) {
+        myBody.velocity = new Vector2(x, myBody.velocity.y);
     } 
 
 } 

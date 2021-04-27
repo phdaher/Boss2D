@@ -6,6 +6,8 @@ public class PlatformSpawner : MonoBehaviour {
 
     public GameObject platformPrefab;
     public GameObject spikePlatformPrefab;
+    public GameObject[] movingPlatforms;
+    public GameObject breakablePlatform;
 
     // Timer de spawn da plafaorma
     public float platform_Spawn_Timer = 0.5f;
@@ -46,8 +48,23 @@ public class PlatformSpawner : MonoBehaviour {
 
             } else if(platform_Spawn_Count == 2) { 
 
-                // Gera uma plataforma aleatória (normal/spike)
+                // Gera uma plataforma aleatória (moving/ normal)
                 if(Random.Range(0, 2) > 0) {
+
+                    newPlatform = Instantiate(platformPrefab, temp, Quaternion.identity);
+
+                } else {
+
+                    newPlatform = Instantiate(
+                    movingPlatforms[Random.Range(0, movingPlatforms.Length)],
+                        temp, Quaternion.identity);
+
+                }
+
+            } else if(platform_Spawn_Count == 3) {
+
+                // Gera uma plataforma aleatória (spike/ normal)
+                if (Random.Range(0, 2) > 0) {
 
                     newPlatform = Instantiate(platformPrefab, temp, Quaternion.identity);
 
@@ -57,10 +74,23 @@ public class PlatformSpawner : MonoBehaviour {
 
                 }
 
+            } else if (platform_Spawn_Count == 4) {
+
+                // Gera uma plataforma aleatória (quebravel/ normal)
+                if (Random.Range(0, 2) > 0) {
+
+                    newPlatform = Instantiate(platformPrefab, temp, Quaternion.identity);
+
+                } else {
+
+                    newPlatform = Instantiate(breakablePlatform, temp, Quaternion.identity);
+
+                }
+
                 // Zera o contador
                 platform_Spawn_Count = 0;
 
-            } 
+            }
 
             if(newPlatform)
                 newPlatform.transform.parent = transform;
@@ -72,9 +102,8 @@ public class PlatformSpawner : MonoBehaviour {
 
     }
 
-} 
 
-
+}
 
 
 
